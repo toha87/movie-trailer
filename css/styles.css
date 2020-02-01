@@ -1,146 +1,192 @@
 /* My Awesome Styles */
 
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 /* Diagnostic Styling 
   * Change Background Color
   * Outline Elements
 */
 
-* {
-    outline: 1px dotted black;
+body {
+    background-image: url(../assets/background-matrix.jpg);
+    color: green;
+    filter: grayscale(50%);
 }
 
-main { 
-  display: grid;
-  grid-template-columns: 1fr;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+    margin: 2em 7em 5em;
+    padding: 5em;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+    line-height: 1.6;
 }
 
-.cast {  
-  display: flex;
-  flex-wrap: wrap;
+.cast {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
 }
+
+h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    filter: brightness(50%);
+}
+
+img:hover {
+    filter: brightness(100%);
+}
+
+blockquote {
+    font-style: italic;
+}
+
+a {
+    color: green;
+    line-height: 1.8;
+    font-size: 1.5em;
+}
+
+figure {
+    display: block;
+    text-align: center;
+}
+
+.hero {
+    margin: 10px 0px;
+    font-size: 2em;
+    color: green;
+    display: block;
+    height: auto;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgb(194, 190, 190);
+}
+
+.hero:hover {
+    -webkit-animation: shake 1s ease-in-out 0.1s infinite alternate;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(5deg);
+    }
+    to {
+        -webkit-transform-origin: center center;
+        -webkit-transform: rotate(-5deg);
+    }
+}
+
 
 /* Custom UI controls */
+
 .plyr--full-ui input[type="range"] {
-  color: rgb(0, 236, 253);
+    color: green;
 }
 
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+    background-color: green;
+}
+
+
 /* Media Queries */
+
+
 /* 
   Mobile: 
   * 384px = 24em
 */
-@media only screen and (min-width: 0) { 
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-  
+
+@media only screen and (min-width: 0) {
+    /* Diagnostic Styling. Delete When Done. */
 }
+
 
 /* Tablet:  
   * 768px = 48em 
 */
-@media only screen and (min-width: 24em)  {
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
 
+@media only screen and (min-width: 24em) {
+    /* Diagnostic Styling. Delete When Done. */
 }
+
 
 /* Desktop: 
   * 1152px = 72em
 */
-@media screen and (min-width: 72em)  { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
 
+@media screen and (min-width: 72em) {
+    /* Diagnostic Styling. Delete When Done. */
 }
+
 
 /* Wide Desktop: 
   * 1440px = 90em
 */
-@media screen and (min-width: 90em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Wide Desktop Size";
-  }
 
-}
-
-
-
-
-@media only screen 
-  and (min-width: 0) 
-  and (max-width: 48em)  { 
-    
+@media screen and (min-width: 90em) {
     /* Diagnostic Styling. Delete When Done. */
-    body:before {
-         background: yellow;
-         content: "Mobile Size";
-    }
-    
-    .cast {
-      text-align: center;
-      justify-content: center;
-    }
-  
 }
+
+@media only screen and (min-width: 0) and (max-width: 48em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        padding: 1.5em;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 5px;
+    }
+}
+
 
 /* Tablet:  
   * 768px = 48em 
     1023px = 63.9375em;
 */
-@media only screen 
-  and (min-width: 48em) 
-  and (max-width: 64em)  {
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  } 
-    
+
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+    /* Diagnostic Styling. Delete When Done. */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2em;
+        padding: 1em;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 20px;
+    }
 }
+
 
 /* Desktop: 
   * 1024px = 64em
   * 64em and larger
 */
-@media screen 
-  and (min-width: 64em) 
-  and (max-width: 90em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
 
+@media screen and (min-width: 64em) and (max-width: 90em) {
+    /* Diagnostic Styling. Delete When Done. */
 }
+
 
 /* Wide Desktop: 
   * 1440px = 90em
   * 90em and wider
 */
-@media screen and (min-width: 90em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Wide Desktop Size";
-  }
 
+@media screen and (min-width: 90em) {
+    /* Diagnostic Styling. Delete When Done. */
 }
-
