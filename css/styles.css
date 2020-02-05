@@ -14,17 +14,7 @@ body {
     filter: grayscale(50%);
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: black;
-    margin: 2em 7em 5em;
-    padding: 5em;
-    font-size: 1.1em;
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 20px;
-    line-height: 1.6;
-}
+
 
 .cast {
     display: flex;
@@ -55,7 +45,7 @@ blockquote {
 a {
     color: green;
     line-height: 1.8;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 figure {
@@ -71,6 +61,10 @@ figure {
     height: auto;
     text-align: center;
     text-shadow: 0px 1px 1px rgb(194, 190, 190);
+}
+
+h2 {
+    font-size: 1.2em;
 }
 
 .hero:hover {
@@ -144,12 +138,32 @@ figure {
     main {
         display: grid;
         grid-template-columns: 1fr;
+        background-color: black;
         margin: 1em;
         padding: 1.5em;
         font-size: 1em;
         font-family: 'Open Sans', sans-serif;
         border-radius: 5px;
     }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    a {
+        color: green;
+        line-height: 1.8;
+        font-size: 1em;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    blockquote {
+        line-height: 1.8;
+    }
+
 }
 
 
@@ -159,15 +173,26 @@ figure {
 */
 
 @media only screen and (min-width: 48em) and (max-width: 64em) {
-    /* Diagnostic Styling. Delete When Done. */
+
     main {
         display: grid;
         grid-template-columns: 1fr;
+        background-color: black;
         margin: 2em;
         padding: 1em;
         font-size: 1.2em;
         font-family: 'Open Sans', sans-serif;
         border-radius: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    a {
+        color: green;
+        line-height: 1.8;
+        font-size: 1.2em;
     }
 }
 
@@ -178,7 +203,28 @@ figure {
 */
 
 @media screen and (min-width: 64em) and (max-width: 90em) {
-    /* Diagnostic Styling. Delete When Done. */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: black;
+        margin: 2em 7em 5em;
+        padding: 5em;
+        font-size: 1.1em;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 20px;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    a {
+        color: green;
+        line-height: 1.8;
+        font-size: 1.2em;
+    }
+
 }
 
 
@@ -188,5 +234,30 @@ figure {
 */
 
 @media screen and (min-width: 90em) {
-    /* Diagnostic Styling. Delete When Done. */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: black;
+        margin: 2em 7em 5em;
+        padding: 5em;
+        font-size: 1.1em;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 20px;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    a {
+        color: green;
+        line-height: 1.8;
+        font-size: 1.2em;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
 }
