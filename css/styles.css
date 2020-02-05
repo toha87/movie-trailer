@@ -29,9 +29,11 @@ h1 {
 }
 
 img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     filter: brightness(50%);
+    transition: 0.5s;
 }
 
 img:hover {
