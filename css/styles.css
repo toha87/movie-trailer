@@ -140,7 +140,7 @@ h2 {
     main {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: black;
+        background-color:  #0000009c;
         margin: 1em;
         padding: 1.5em;
         font-size: 1em;
@@ -179,8 +179,8 @@ h2 {
     main {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: black;
-        margin: 2em;
+        background-color: #0000009c;
+        margin: 1em;
         padding: 1em;
         font-size: 1.2em;
         font-family: 'Open Sans', sans-serif;
@@ -208,8 +208,8 @@ h2 {
     main {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: black;
-        margin: 2em 7em 5em;
+        background-color:  #0000009c;
+        margin: 1em 7em 5em;
         padding: 5em;
         font-size: 1.1em;
         font-family: 'Open Sans', sans-serif;
@@ -239,8 +239,8 @@ h2 {
     main {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: black;
-        margin: 2em 7em 5em;
+        background-color: #0000009c;
+        margin: 1em 7em 5em;
         padding: 5em;
         font-size: 1.1em;
         font-family: 'Open Sans', sans-serif;
