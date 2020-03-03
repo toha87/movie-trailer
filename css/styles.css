@@ -14,8 +14,6 @@ body {
     filter: grayscale(50%);
 }
 
-
-
 .cast {
     display: flex;
     flex-wrap: wrap;
@@ -140,32 +138,27 @@ h2 {
     main {
         display: grid;
         grid-template-columns: 1fr;
-        background-color:  #0000009c;
+        background-color: #0000009c;
         margin: 1em;
         padding: 1.5em;
         font-size: 1em;
         font-family: 'Open Sans', sans-serif;
         border-radius: 5px;
     }
-
     h2 {
         font-size: 1em;
     }
-
     a {
         color: green;
         line-height: 1.8;
         font-size: 1em;
     }
-
     p {
         line-height: 1.8;
     }
-
     blockquote {
         line-height: 1.8;
     }
-
 }
 
 
@@ -175,7 +168,6 @@ h2 {
 */
 
 @media only screen and (min-width: 48em) and (max-width: 64em) {
-
     main {
         display: grid;
         grid-template-columns: 1fr;
@@ -186,11 +178,9 @@ h2 {
         font-family: 'Open Sans', sans-serif;
         border-radius: 20px;
     }
-
     h2 {
         font-size: 1.2em;
     }
-
     a {
         color: green;
         line-height: 1.8;
@@ -208,7 +198,7 @@ h2 {
     main {
         display: grid;
         grid-template-columns: 1fr;
-        background-color:  #0000009c;
+        background-color: #0000009c;
         margin: 1em 7em 5em;
         padding: 5em;
         font-size: 1.1em;
@@ -216,17 +206,37 @@ h2 {
         border-radius: 20px;
         line-height: 1.6;
     }
-
     h2 {
         font-size: 1.2em;
     }
-
     a {
         color: green;
         line-height: 1.8;
         font-size: 1.2em;
     }
-
+    section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #121212;
+    }
+    section li {
+        float: left;
+    }
+    section li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    .active {
+        background-color: green;
+    }
 }
 
 
@@ -247,19 +257,15 @@ h2 {
         border-radius: 20px;
         line-height: 1.6;
     }
-
     h2 {
         font-size: 1.2em;
     }
-
     a {
         color: green;
         line-height: 1.8;
         font-size: 1.2em;
     }
-
     p {
         line-height: 1.8;
     }
-
 }
